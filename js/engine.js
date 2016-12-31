@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+function cv_generator(){
+    
 var doc = new jsPDF();
 
 // container
@@ -32,4 +34,9 @@ doc.rect(10,236,90,10);
 doc.line(10,270,200,270);
 doc.rect(76,274,60,10);
 
+//renaming the document    
+doc.save('my cv.pdf');
+    
+};
+    
 }
